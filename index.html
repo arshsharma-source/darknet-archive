@@ -9,58 +9,59 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            background-color: black; /* Backup color if image doesn't load */
-            font-family: 'Georgia', serif; /* A spooky, classic font */
+            background-color: black; 
+            font-family: 'Georgia', serif; 
             color: white;
             margin: 0;
             padding: 0;
         }
 
-        /* This creates a dark box in the middle so the text is easy to read */
-        .story-box {
-            background-color: rgba(0, 0, 0, 0.8); /* Black box, slightly see-through */
-            max-width: 600px;
-            margin: 100px auto; /* Centers the box and pushes it down */
-            padding: 40px;
-            border: 2px solid #8b0000; /* Dark red border */
-            box-shadow: 0 0 20px #8b0000; /* Red glow around the box */
+        /* I removed the box! Now it just centers the text on the screen */
+        .story-text {
+            max-width: 700px;
+            margin: 150px auto; 
+            padding: 20px;
             text-align: center;
+            /* This adds a shadow behind the text so it pops off the background */
+            text-shadow: 2px 2px 8px black, -2px -2px 8px black; 
         }
 
         h1 {
             color: #ff4d4d; /* Blood red heading */
-            font-size: 2.5em;
-            text-shadow: 2px 2px 5px black;
+            font-size: 3em;
+            text-shadow: 3px 3px 10px black;
         }
 
         p {
-            font-size: 1.1em;
+            font-size: 1.3em;
             line-height: 1.6;
+            font-weight: bold;
         }
 
         /* This styles the link to look like a glowing button */
         a {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
             padding: 15px 30px;
-            background-color: #8b0000; /* Dark red */
+            background-color: #8b0000; 
             color: white;
             text-decoration: none;
             font-weight: bold;
             border: 1px solid #ff4d4d;
             transition: 0.3s;
+            text-shadow: none; /* Removes the shadow from the button text */
         }
 
         a:hover {
-            background-color: #ff4d4d; /* Turns bright red when you hover over it */
+            background-color: #ff4d4d; 
             color: black;
-            box-shadow: 0 0 15px #ff4d4d;
+            box-shadow: 0 0 20px #ff4d4d;
         }
     </style>
 </head>
 <body>
 
-    <div class="story-box">
+    <div class="story-text">
         <h1>Welcome to the Midnight Market</h1>
         
         <p>Every Halloween, a secret website appears on the dark web. It only stays online for one night.</p>
