@@ -1,103 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Halloween Market</title>
+    <title>The Marketplace</title>
     <style>
-        /* This makes the background white so the text is easy to read over the image */
-        body { 
-            background-color: white; 
-            background-image: url('background.jpg'); 
-            background-size: cover;
-            background-attachment: fixed;
-            font-family: Arial, sans-serif;
-            color: black;
-            margin: 40px;
-        }
-
-        /* This creates the 3-column grid for your items */
+        /* This tiny bit of CSS makes the 3x2 grid */
         .shop-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 items across */
-            gap: 20px; /* space between items */
-            max-width: 1000px;
-            margin: 0 auto; /* centers the grid */
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
         }
-
-        /* This styles the individual product boxes */
         .product {
-            background-color: rgba(255, 255, 255, 0.9); /* Slightly see-through white box */
-            padding: 15px;
-            border: 2px solid black;
+            border: 1px solid black;
+            padding: 10px;
             text-align: center;
         }
-
         .product img {
             width: 100%;
-            height: 200px;
+            height: 150px;
             object-fit: cover;
-            border: 1px solid black;
         }
-
-        a { color: blue; text-decoration: underline; font-weight: bold; }
     </style>
 </head>
-<body>
+<body bgcolor="white" text="black">
 
-    <h1 style="text-align: center;">The Midnight Halloween Market</h1>
-    <p style="text-align: center;">Select an item to view its terrible price:</p>
+    <h1 style="text-align: center;">The Marketplace</h1>
+    <p style="text-align: center;">Select an item to see its price:</p>
 
     <div class="shop-grid">
 
         <!-- ITEM 1 -->
         <div class="product">
-            <img src="mask1.jpg" alt="Creepy Mask">
+            <img src="mask1.jpg" alt="Mask">
             <h3><a href="page3.html">The Crying Mask</a></h3>
-            <p>"It weeps when you wear it."</p>
         </div>
 
         <!-- ITEM 2 -->
         <div class="product">
-            <img src="mask2.jpg" alt="Plague Doctor Mask">
-            <h3><a href="page4.html">Plague Doctor Mask</a></h3>
-            <p>"Protects you from disease, but not from ghosts."</p>
+            <img src="mask2.jpg" alt="Mask">
+            <h3><a href="page4.html">Plague Mask</a></h3>
         </div>
 
         <!-- ITEM 3 -->
         <div class="product">
-            <img src="clothes1.jpg" alt="Bloody Coat">
+            <img src="clothes1.jpg" alt="Clothes">
             <h3><a href="page5.html">The Bloody Coat</a></h3>
-            <p>"The stains never wash out."</p>
         </div>
 
         <!-- ITEM 4 -->
         <div class="product">
-            <img src="item4.jpg" alt="Vintage Doll">
+            <img src="item4.jpg" alt="Doll">
             <h3><a href="page6.html">The Cursed Doll</a></h3>
-            <p>"It whispers your secrets in the dark."</p>
         </div>
 
         <!-- ITEM 5 -->
         <div class="product">
-            <img src="candy.jpg" alt="Poison Candy">
+            <img src="candy.jpg" alt="Candy">
             <h3><a href="page7.html">Poison Candy</a></h3>
-            <p>"Tastes like your childhood."</p>
         </div>
 
         <!-- ITEM 6 -->
         <div class="product">
-            <img src="item6.jpg" alt="Old Lantern">
-            <h3><a href="page8.html">The Spirit Lantern</a></h3>
-            <p>"Attracts things that should stay dead."</p>
+            <img src="item6.jpg" alt="Lantern">
+            <h3><a href="page8.html">Spirit Lantern</a></h3>
         </div>
 
     </div>
 
     <hr style="margin-top: 40px;">
     
-    <div style="text-align: center;">
-        <p><a href="page9.html">Proceed to Checkout</a></p>
-        <p><a href="index.html">Return to Home</a></p>
-    </div>
+    <p style="text-align: center;"><a href="page9.html">Proceed to Checkout</a></p>
+    <p style="text-align: center;"><a href="index.html">Return to Home</a></p>
 
 </body>
 </html>
