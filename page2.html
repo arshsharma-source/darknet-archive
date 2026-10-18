@@ -4,7 +4,13 @@
     <title>The Marketplace</title>
     <style>
         body {
-            background-color: #111; /* Very dark grey background */
+            /* THIS IS THE BACKGROUND CODE YOU WERE LOOKING FOR */
+            /* Change 'mybackground.jpg' to whatever you named your image */
+            background-image: url('mybackground.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #111; 
             font-family: 'Georgia', serif;
             color: white;
             margin: 40px;
@@ -13,7 +19,7 @@
         h1 {
             text-align: center;
             color: #ff4d4d;
-            text-shadow: 2px 2px 5px black;
+            text-shadow: 2px 2px 5px black, -2px -2px 5px black;
         }
 
         /* This creates the 3x2 grid */
@@ -22,13 +28,13 @@
             grid-template-columns: repeat(3, 1fr); 
             gap: 20px;
             max-width: 900px;
-            margin: 0 auto;
+            margin: 40px auto;
         }
 
         /* This styles the product boxes */
         .product {
-            background-color: black;
-            border: 2px solid #8b0000; /* Dark red border */
+            background-color: rgba(0, 0, 0, 0.8); /* Slightly see-through black box */
+            border: 2px solid #8b0000; 
             padding: 15px;
             text-align: center;
             box-shadow: 0 0 10px #8b0000;
@@ -38,14 +44,12 @@
             width: 100%;
             height: 150px;
             object-fit: cover;
-            /* Makes the image look dark and spooky */
             filter: grayscale(100%) contrast(150%) brightness(0.5);
             border-bottom: 1px solid #8b0000;
             margin-bottom: 10px;
             transition: 0.3s;
         }
 
-        /* When you hover, the image turns normal! */
         .product:hover img {
             filter: none;
             box-shadow: 0 0 15px white;
@@ -66,13 +70,14 @@
             text-align: center;
             margin-top: 40px;
             font-size: 1em;
+            text-shadow: 2px 2px 5px black;
         }
     </style>
 </head>
 <body>
 
     <h1>The Marketplace</h1>
-    <p style="text-align: center;">Select an item to see its price:</p>
+    <p style="text-align: center; text-shadow: 2px 2px 5px black;">Select an item to see its price:</p>
 
     <div class="shop-grid">
 
