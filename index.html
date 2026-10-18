@@ -2,18 +2,75 @@
 <html>
 <head>
     <title>The Midnight Halloween Market</title>
-</head>
-<body bgcolor="white" text="black">
+    <style>
+        /* This sets the background image and makes it cover the whole screen */
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: black; /* Backup color if image doesn't load */
+            font-family: 'Georgia', serif; /* A spooky, classic font */
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
 
-    <h1>Welcome to the Midnight Halloween Market</h1>
-    
-    <p>Every Halloween, a secret website appears on the dark web. It only stays online for one night.</p>
-    <p>They say you can buy things here that you can't find anywhere else. Things that shouldn't exist. Masks that change your face. Clothes that make you invisible. Candy that lets you hear the dead.</p>
-    <p>But be careful. The seller is always watching, and the price is never money.</p>
-    
-    <hr>
-    
-    <p><a href="page2.html">Enter the Marketplace</a></p>
+        /* This creates a dark box in the middle so the text is easy to read */
+        .story-box {
+            background-color: rgba(0, 0, 0, 0.8); /* Black box, slightly see-through */
+            max-width: 600px;
+            margin: 100px auto; /* Centers the box and pushes it down */
+            padding: 40px;
+            border: 2px solid #8b0000; /* Dark red border */
+            box-shadow: 0 0 20px #8b0000; /* Red glow around the box */
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff4d4d; /* Blood red heading */
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* This styles the link to look like a glowing button */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #8b0000; /* Dark red */
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #ff4d4d;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background-color: #ff4d4d; /* Turns bright red when you hover over it */
+            color: black;
+            box-shadow: 0 0 15px #ff4d4d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="story-box">
+        <h1>Welcome to the Midnight Market</h1>
+        
+        <p>Every Halloween, a secret website appears on the dark web. It only stays online for one night.</p>
+        
+        <p>They say you can buy things here that you can't find anywhere else. Things that shouldn't exist. Masks that change your face. Clothes that make you invisible. Candy that lets you hear the dead.</p>
+        
+        <p>But be careful. The seller is always watching, and the price is never money.</p>
+        
+        <a href="page2.html">Enter the Marketplace</a>
+    </div>
 
 </body>
 </html>
