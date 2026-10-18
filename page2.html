@@ -1,63 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Midnight Market</title>
+    <title>Halloween Market</title>
+    <style>
+        /* This makes the background white so the text is easy to read over the image */
+        body { 
+            background-color: white; 
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: black;
+            margin: 40px;
+        }
+
+        /* This creates the 3-column grid for your items */
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 items across */
+            gap: 20px; /* space between items */
+            max-width: 1000px;
+            margin: 0 auto; /* centers the grid */
+        }
+
+        /* This styles the individual product boxes */
+        .product {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly see-through white box */
+            padding: 15px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid black;
+        }
+
+        a { color: blue; text-decoration: underline; font-weight: bold; }
+    </style>
 </head>
-<body bgcolor="white" text="black">
+<body>
 
-    <h1>Welcome to the Midnight Market</h1>
-    <p>Please select an item to view its details:</p>
+    <h1 style="text-align: center;">The Midnight Halloween Market</h1>
+    <p style="text-align: center;">Select an item to view its terrible price:</p>
+
+    <div class="shop-grid">
+
+        <!-- ITEM 1 -->
+        <div class="product">
+            <img src="mask1.jpg" alt="Creepy Mask">
+            <h3><a href="page3.html">The Crying Mask</a></h3>
+            <p>"It weeps when you wear it."</p>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="product">
+            <img src="mask2.jpg" alt="Plague Doctor Mask">
+            <h3><a href="page4.html">Plague Doctor Mask</a></h3>
+            <p>"Protects you from disease, but not from ghosts."</p>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="product">
+            <img src="clothes1.jpg" alt="Bloody Coat">
+            <h3><a href="page5.html">The Bloody Coat</a></h3>
+            <p>"The stains never wash out."</p>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="product">
+            <img src="item4.jpg" alt="Vintage Doll">
+            <h3><a href="page6.html">The Cursed Doll</a></h3>
+            <p>"It whispers your secrets in the dark."</p>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="product">
+            <img src="candy.jpg" alt="Poison Candy">
+            <h3><a href="page7.html">Poison Candy</a></h3>
+            <p>"Tastes like your childhood."</p>
+        </div>
+
+        <!-- ITEM 6 -->
+        <div class="product">
+            <img src="item6.jpg" alt="Old Lantern">
+            <h3><a href="page8.html">The Spirit Lantern</a></h3>
+            <p>"Attracts things that should stay dead."</p>
+        </div>
+
+    </div>
+
+    <hr style="margin-top: 40px;">
     
-    <hr>
-
-    <h3>Items for Sale:</h3>
-    
-    <!-- Item 1 -->
-    <p>
-        <a href="page3.html">Bottled Memories</a><br>
-        <img src="item1.jpg" width="200"><br>
-        <em>"Experience your best day again."</em>
-    </p>
-
-    <!-- Item 2 -->
-    <p>
-        <a href="page4.html">A Second Shadow</a><br>
-        <img src="item2.jpg" width="200"><br>
-        <em>"It follows you everywhere."</em>
-    </p>
-
-    <!-- Item 3 -->
-    <p>
-        <a href="page5.html">Future Phone Call</a><br>
-        <img src="item3.jpg" width="200"><br>
-        <em>"The voice is always crying."</em>
-    </p>
-
-    <!-- Item 4 -->
-    <p>
-        <a href="page6.html">One Extra Hour</a><br>
-        <img src="item4.jpg" width="200"><br>
-        <em>"Delay the inevitable."</em>
-    </p>
-
-    <!-- Item 5 -->
-    <p>
-        <a href="page7.html">Stranger's Eyes</a><br>
-        <img src="item5.jpg" width="200"><br>
-        <em>"See the world through someone else."</em>
-    </p>
-
-    <!-- Item 6 -->
-    <p>
-        <a href="page8.html">The Locked Box</a><br>
-        <img src="item6.jpg" width="200"><br>
-        <em>"It's screaming to get out."</em>
-    </p>
-
-    <hr>
-    
-    <p><a href="page9.html">Proceed to Checkout</a></p>
-    <p><a href="index.html">Return to Home</a></p>
+    <div style="text-align: center;">
+        <p><a href="page9.html">Proceed to Checkout</a></p>
+        <p><a href="index.html">Return to Home</a></p>
+    </div>
 
 </body>
 </html>
