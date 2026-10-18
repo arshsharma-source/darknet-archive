@@ -3,7 +3,20 @@
 <head>
     <title>The Marketplace</title>
     <style>
-        /* This tiny bit of CSS makes the 3x2 grid */
+        body {
+            background-color: #111; /* Very dark grey background */
+            font-family: 'Georgia', serif;
+            color: white;
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff4d4d;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        /* This creates the 3x2 grid */
         .shop-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr); 
@@ -11,21 +24,54 @@
             max-width: 900px;
             margin: 0 auto;
         }
+
+        /* This styles the product boxes */
         .product {
-            border: 1px solid black;
-            padding: 10px;
+            background-color: black;
+            border: 2px solid #8b0000; /* Dark red border */
+            padding: 15px;
             text-align: center;
+            box-shadow: 0 0 10px #8b0000;
         }
+
         .product img {
             width: 100%;
             height: 150px;
             object-fit: cover;
+            /* Makes the image look dark and spooky */
+            filter: grayscale(100%) contrast(150%) brightness(0.5);
+            border-bottom: 1px solid #8b0000;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        /* When you hover, the image turns normal! */
+        .product:hover img {
+            filter: none;
+            box-shadow: 0 0 15px white;
+        }
+
+        a {
+            color: #ff4d4d;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        .footer-link {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1em;
         }
     </style>
 </head>
-<body bgcolor="white" text="black">
+<body>
 
-    <h1 style="text-align: center;">The Marketplace</h1>
+    <h1>The Marketplace</h1>
     <p style="text-align: center;">Select an item to see its price:</p>
 
     <div class="shop-grid">
@@ -68,10 +114,10 @@
 
     </div>
 
-    <hr style="margin-top: 40px;">
-    
-    <p style="text-align: center;"><a href="page9.html">Proceed to Checkout</a></p>
-    <p style="text-align: center;"><a href="index.html">Return to Home</a></p>
+    <div class="footer-link">
+        <p><a href="page9.html">Proceed to Checkout</a></p>
+        <p><a href="index.html">Return to Home</a></p>
+    </div>
 
 </body>
 </html>
